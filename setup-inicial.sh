@@ -32,8 +32,10 @@ git remote add origin /home/jovyan/repos/local
 
 git push origin master
 
-
+cd $(printenv HOME)
 mkdir workstationFritz
 cd workstationFritz
 
 git init
+git config user.email "fmann@example.org"
+git config user.name  "Fritz Mann"

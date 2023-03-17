@@ -1,0 +1,5 @@
+
+¿Qué comandos necesita usar Fritz para clonar el repositiorio y ponerse al día con los commits hechos en su ausencia?
+    git remote add origin /home/jovyan/repos/local
+    git pull origin master
+    git log
