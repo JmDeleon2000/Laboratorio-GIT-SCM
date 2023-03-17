@@ -39,3 +39,11 @@ cd workstationFritz
 git init
 git config user.email "fmann@example.org"
 git config user.name  "Fritz Mann"
+
+cd $(printenv HOME)
+mkdir workstationOscar
+cd workstationOscar
+
+git init
+git config user.email "omelendez@example.org"
+git config user.name  "Oscar Meléndez"
