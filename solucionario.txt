@@ -3,3 +3,18 @@
     git remote add origin /home/jovyan/repos/local
     git pull origin master
     git log
+
+
+
+
+
+
+Solución con git reset:
+    1. git reset --hard [hash de static/screenMSG.txt]
+    2. Iterar los siguientes pasos:
+        2.1. git checkout [hash de commit que se quiere incluir en la nueva historia] :/
+        2.2. git commit -a -m [mensaje de ese commit]
+    3. git push origin master --force 
+*Esto cambia la autoría de los commits. Sería bueno reflejar eso en los mensajes nuevos
+Los hashes se muestran con git log --oneline -graph --all
+Los compañeros tendrán que usar rebase para actualizar su trabajo

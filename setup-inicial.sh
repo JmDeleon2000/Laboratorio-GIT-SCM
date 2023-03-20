@@ -47,3 +47,5 @@ cd workstationOscar
 git init
 git config user.email "omelendez@example.org"
 git config user.name  "Oscar Meléndez"
+git remote add origin /home/jovyan/repos/local
+git pull origin master
