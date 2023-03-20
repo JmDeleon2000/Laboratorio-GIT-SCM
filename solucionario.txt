@@ -29,3 +29,9 @@ Solución con git reset:
     3. git push origin master --force 
 
 Solución con git rebase -i:
+    1. Abrir una terminal desde el Launcher (Ctrl+Shift+L)*
+    2. git reset --hard [SHA-1 de static/screenMSG.txt]
+    3. git rebase -i
+        3.1 añadir una línea que contenga: "drop [SHA-1 del commit no deseado]"
+        3.2 añadir lineas que contengan: "pick [SHA-1 de los commits no deseado]" (una línea por commit)
+*Esto permite a git rebase -i abrir el editor
