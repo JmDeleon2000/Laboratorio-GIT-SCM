@@ -10,11 +10,22 @@
 
 
 Solución con git reset:
-    1. git reset --hard [hash de static/screenMSG.txt]
-    2. Iterar los siguientes pasos:
-        2.1. git checkout [hash de commit que se quiere incluir en la nueva historia] :/
+    1. git reset --hard [SHA-1 de static/screenMSG.txt]
+    2. Iterar los siguientes pasos para cada commit que se desea incluir:
+        2.1. git checkout [SHA-1 del commit que se quiere incluir en la nueva historia] :/
         2.2. git commit -a -m [mensaje de ese commit]
     3. git push origin master --force 
 *Esto cambia la autoría de los commits. Sería bueno reflejar eso en los mensajes nuevos
-Los hashes se muestran con git log --oneline -graph --all
+Los SHA-1 se muestran con git log --oneline -graph --all
 Los compañeros tendrán que usar rebase para actualizar su trabajo
+
+
+
+Solución con git reset:
+    1. git reset --hard [SHA-1 de static/screenMSG.txt]
+    2. Iterar los siguientes pasos para cada commit que se desea incluir:
+        2.1. git cherry-pick [SHA-1 del commit]
+        2.2. git commit -a -m [mensaje de ese commit]
+    3. git push origin master --force 
+
+Solución con git rebase -i:
